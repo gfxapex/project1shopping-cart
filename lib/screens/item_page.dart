@@ -16,28 +16,28 @@ Colors.orange];
   
   Widget build(BuildContext context) {
     return Scaffold(body: ListView(children: [
-      itemAppBar(),
+      const itemAppBar(),
 
       Image.asset("assets/images/1.png",height: 200,),
-    Container(margin: EdgeInsets.all(10),
-    padding: EdgeInsets.all(10),
+    Container(margin: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(10),
       height: 180,width: double.infinity,color: Colors.white,
       child: Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisAlignment: MainAxisAlignment.spaceAround,
       
         children: [
-          Text("Product Title",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.cyan),
+          const Text("Product Title",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.cyan),
           ),
-          Text("This Sandal made by soft leather, very comfortable wear to use,This Sandal made by soft leather,",
+          const Text("This Sandal made by soft leather, very comfortable wear to use,This Sandal made by soft leather,",
           ),
 
           Row(children: [
-            Text("Size:",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.cyan),),
-            SizedBox(width: 20,),
+            const Text("Size:",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.cyan),),
+            const SizedBox(width: 20,),
             
             Row(
               children: [
                 for(int i=5;i<10;i++)
-                Container(margin: EdgeInsets.all(10),
+                Container(margin: const EdgeInsets.all(10),
                   alignment: Alignment.center,
                   height: 20,width: 20,decoration:BoxDecoration(color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
@@ -47,7 +47,7 @@ Colors.orange];
                     blurRadius: 8,
                     ),]
                   ),
-child: Text(i.toString(),style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.cyan),
+child: Text(i.toString(),style: const TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.cyan),
 ),
                 ),
               ],
@@ -55,13 +55,13 @@ child: Text(i.toString(),style: TextStyle(fontSize: 14,fontWeight: FontWeight.bo
           ],),
         
         Row(children: [
-            Text("Color:",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.cyan),),
-            SizedBox(width: 20,),
+            const Text("Color:",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.cyan),),
+            const SizedBox(width: 20,),
             
             Row(
               children: [
                 for(int i=0;i<5;i++)
-                Container(margin: EdgeInsets.all(10),
+                Container(margin: const EdgeInsets.all(10),
                   alignment: Alignment.center,
                   height: 20,width: 20,decoration:BoxDecoration(
                     color: clrs[i],
@@ -85,7 +85,7 @@ child: Text(i.toString(),style: TextStyle(fontSize: 14,fontWeight: FontWeight.bo
       ),
     
     ]),
-    bottomNavigationBar: itemBottomNavBar(),
+    bottomNavigationBar: const itemBottomNavBar(),
     );
   }
 }
